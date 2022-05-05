@@ -1,0 +1,86 @@
+<html th:replace="partials :: pagina(~{::section},'Página Inicial','home')">
+<body>
+    <section class="container mt-5">
+            
+        <div class="row">
+            <div class="col-md-8 col-12">
+            <form method="post" th:action="@{postagem/nova}">
+                <div class="">
+                <div class="card">
+    
+                    <div class="card-header bg-primary d-flex justify-content-between">
+                        <h3 class="font-logo  text-white">Nova Postagem</h3>
+                    </div>
+                    <div class="card-body">
+                    <textarea id="postagem" name="conteudo" class="form-control rounded-3" style="resize: none; height: 96px;"></textarea>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <input type="submit" value="Postar" class="btn btn-primary justify-content-end rounded-3 mt-2">
+                </div>  
+            </form>
+                
+            </div>
+    
+            <div class="mt-5">
+                <div class="bg-primary">
+                    <h3 class="font-logo text-white" style="padding: 15px;">Postagens Recentes</h3>
+                </div>
+                <a href="" class="card text-decoration-none">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                    <h5 class="card-subtitle">Lorem ipsum dolor sit amet consectetur.</h5>
+                    <div class="">
+                        <small class="text-secondary">Postado por Álex</small>
+                    </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            </div>
+    
+    
+            <div class="col-md-4 col-12">
+
+
+                
+                
+                <div class="d-block bg-primary" style="margin-top: -5px;">
+                    <h3 class="me-auto"></h3>
+                    <h3 class="font-logo text-white" style="padding: 15px;">Meus Grupos</h3>
+                </div>
+        
+                <!-- CARD GRUPO -->
+        
+                <a href="#" class="card card-hover text-decoration-none mt-2">
+                    <div class="card-body">
+                    <h4 class="card-title d-flex justify-content-between">Lorem, ipsum dolor. <small class="badge badge-hover rounded-3">232K</small></h4>
+                    <p class="card-text">Este grupo não há uma descrição definida.</p>
+                    </div>
+                </a>
+
+                <!-- OUTROS GRUPOS -->
+
+                
+                <div class=" d-block bg-primary">
+                    <h3 class="me-auto"></h3>
+                    <h3 class="font-logo text-white" style="padding: 15px;">Outros Grupos</h3>
+                </div>
+        
+                <!-- CARD GRUPO -->
+        
+                <a href="#" class="card card-hover text-decoration-none mt-2">
+                    <div class="card-body">
+                    <h4 class="card-title d-flex justify-content-between">Lorem, ipsum dolor. <small class="badge badge-hover rounded-3">232K</small></h4>
+                    <p class="card-text">Este grupo não há uma descrição definida.</p>
+                    </div>
+                </a>
+    
+    
+    
+            </div>
+        </div>
+        <div>
+    </section>
+</body>
+</html>
